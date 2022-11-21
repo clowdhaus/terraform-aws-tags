@@ -6,7 +6,7 @@ Example:
 
 ```hcl
 module "tags" {
-  source  = "clowdhaus/tags"
+  source  = "clowdhaus/tags/aws"
 
   application = "serverless-gitops-infrastructure"
   environment = "nonprod"
