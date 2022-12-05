@@ -30,7 +30,7 @@ variable "repository" {
   type        = string
 
   validation {
-    condition     = can(regex("^https:\\/\\/github\\.com\\/(clowdhaus)|(serverless-delivery)", var.repository))
-    error_message = "The repository should be in the clowdhaus or serverless-delivery organization."
+    condition     = can(regex("^https:\\/\\/github\\.com\\/(clowdhaus)|(serverless-delivery|aws-blueprints)", var.repository))
+    error_message = "The repository should be in the clowdhaus, serverless-delivery, or aws-blueprints organization."
   }
 }
