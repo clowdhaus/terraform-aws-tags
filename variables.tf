@@ -5,7 +5,7 @@ variable "application" {
 }
 
 variable "created_by" {
-  description = "The framework, tool, and/or method that created this resource - terraform, serverless, pulumi, manual, etc."
+  description = "The framework, tool, and/or method that created this resource - terraform, serverless, pulumi, etc."
   type        = string
   default     = "terraform"
 
@@ -16,12 +16,12 @@ variable "created_by" {
 }
 
 variable "environment" {
-  description = "The environment does this resource belong to? - sandbox, nonprod, prod"
+  description = "The environment does this resource belong to? - sandbox, dev, nonprod, prod"
   type        = string
 
   validation {
-    condition     = can(regex("(^sandbox$)|(^nonprod$)|(^prod$)", var.environment))
-    error_message = "The environment value should be one of - sandbox, nonprod, prod."
+    condition     = can(regex("(^sandbox$)|(^dev$)|(^nonprod$)|(^prod$)", var.environment))
+    error_message = "The environment value should be one of - sandbox, dev, nonprod, prod."
   }
 }
 

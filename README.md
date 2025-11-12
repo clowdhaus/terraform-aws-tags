@@ -85,8 +85,8 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_application"></a> [application](#input\_application) | Application name and/or identifier | `string` | `null` | no |
-| <a name="input_created_by"></a> [created\_by](#input\_created\_by) | The framework, tool, and/or method that created this resource - terraform, serverless, pulumi, manual, etc. | `string` | `"terraform"` | no |
-| <a name="input_environment"></a> [environment](#input\_environment) | The environment does this resource belong to? - sandbox, nonprod, prod | `string` | n/a | yes |
+| <a name="input_created_by"></a> [created\_by](#input\_created\_by) | The framework, tool, and/or method that created this resource - terraform, serverless, pulumi, etc. | `string` | `"terraform"` | no |
+| <a name="input_environment"></a> [environment](#input\_environment) | The environment does this resource belong to? - sandbox, dev, nonprod, prod | `string` | n/a | yes |
 | <a name="input_repository"></a> [repository](#input\_repository) | The repository name where this resource is managed and codified | `string` | n/a | yes |
 
 ## Outputs
